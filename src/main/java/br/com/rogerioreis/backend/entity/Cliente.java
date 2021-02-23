@@ -1,4 +1,4 @@
-package br.com.rogerioreis.backend.model;
+package br.com.rogerioreis.backend.entity;
 
 import java.math.BigDecimal;
 
@@ -11,7 +11,7 @@ import lombok.Data;
 
 @Data //é uma anotação do Lombok para não precisar informar get/set/equal hash e toString
 @Entity // faza a classe se comportar como entidade (tabela no banco)
-public class Product {
+public class Cliente {
 
 	@Id // informa que este campo é o ID
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // define a estratégia de geração de ID
@@ -19,6 +19,6 @@ public class Product {
 
 	private String nome;
 
-	private BigDecimal valor;
+
 
 }
