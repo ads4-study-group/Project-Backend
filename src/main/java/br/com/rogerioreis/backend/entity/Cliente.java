@@ -1,7 +1,5 @@
 package br.com.rogerioreis.backend.entity;
 
-import java.math.BigDecimal;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,7 +7,8 @@ import javax.persistence.Id;
 
 import lombok.Data;
 
-@Data //é uma anotação do Lombok para não precisar informar get/set/equal hash e toString
+@Data // é uma anotação do Lombok para não precisar informar get/set/equal hash e
+		// toString
 @Entity // faza a classe se comportar como entidade (tabela no banco)
 public class Cliente {
 
@@ -18,7 +17,5 @@ public class Cliente {
 	private Long id;
 
 	private String nome;
-
-
 
 }
