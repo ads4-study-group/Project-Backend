@@ -21,7 +21,9 @@ public class SwaggerConfig {
 	@Bean
 	public Docket productApi() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("br.com.rogerioreis.backend")).paths(PathSelectors.any()).build()
+				.apis(RequestHandlerSelectors.basePackage("br.com.rogerioreis.backend"))
+				.paths(PathSelectors.any())
+				.build()
 				.apiInfo(metaInfo());
 	}
 
